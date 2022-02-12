@@ -22,9 +22,11 @@ int main(){
         lcol = 0; // reseting coordinates for next iteration
         srow = 0;
     }
-    printf("Largest Cols | Smallest Rows\n");// disaplaying results 
+    //identifying saddle points from coordinates
     for(int i = 0; i < 3; i++){
-        printf("%d  %d\n",lcol_pos[i],srow_pos[i]);
+        if(srow_pos[lcol_pos[i]] == i){
+            printf("SP is %d\n",array[srow_pos[i]][lcol_pos[i]]);
+        }
     }
     return 0;
 }
