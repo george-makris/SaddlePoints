@@ -14,3 +14,14 @@ It's called a "saddle point" because it is greater than or equal to every elemen
 - Check in that column (if row largest identified) if that number is the smallest.
 
 4. If both are true, identify and mark as saddle point. Save coordinate in matrix.
+
+## Dev notes:
+After achieving desired result with matrix { 9, 8, 7 }, { 5, 3, 2 }, { 6, 6, 7 } by identifying saddle point with the number 5 (in commit  bf69b7a55a6e6e2b9b30a42d84e86385033864e1), more matrixes where tested in order to further verfiy the logic of the programm.
+
+The matrix { 4, 5, 4 }, { 3, 5, 5 }, { 1, 5, 4 } should have 3 Saddle Points (SPs) at:
+- 0,0
+- 1,1
+- 2,1
+
+But only yielded the last one 2,1 = 5. Hence a revision/modification will be implemented in order to for programm to work correctly for all cases.
+
